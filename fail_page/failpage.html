@@ -1,0 +1,145 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Lose!</title>
+    <style>
+        body {
+            background-image: url("images/victory.gif");
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 400%;
+            text-align: center;
+            -webkit-animation: color-change 1s infinite;
+            -moz-animation: color-change 1s infinite;
+            -o-animation: color-change 1s infinite;
+            -ms-animation: color-change 1s infinite;
+            animation: color-change 1s infinite;
+        }
+        @-webkit-keyframes color-change {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+        @-moz-keyframes color-change {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+        @-ms-keyframes color-change {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+        @-o-keyframes color-change {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+        @keyframes color-change {
+            0% { color: red; }
+            50% { color: white; }
+            100% { color: red; }
+        }
+
+        #image {
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            height: 40%;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            color: black;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            border-style: solid;
+            border-color: black;
+            margin-top: -25px;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            font-family: "Exo", sans-serif;
+            color: #fff;
+            background: linear-gradient(-45deg, red, black);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            width: 100%;
+            position: absolute;
+            top: 35%;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 300;
+        }
+
+        h3 {
+            color: #eee;
+            font-weight: 100;
+        }
+
+        h5 {
+            color: #eee;
+            font-weight: 300;
+        }
+
+        a,
+        a:hover {
+            text-decoration: none;
+            color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WRONG!</h1>
+    <audio src="src/fail.mp3" id="bob"></audio>
+    <img src="images/baby.gif" id="image">
+    <script>
+        document.getElementById("image").onclick = sound;
+
+        function sound() {
+            document.getElementById("bob").play();
+        }
+
+        function returnToHome() {
+            location.href = "../index.html";
+        }
+    </script>
+    <h2>CLICK ON IMAGE TO ACCEPT DEFEAT!</h2>
+    <button type="button" onclick="returnToHome()">Go Back</button>
+</body>
+
+</html>
