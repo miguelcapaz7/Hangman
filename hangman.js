@@ -2,11 +2,12 @@ let can_play = true;
 let words = new Array(
     ["PROGRAMMING", "the process of writing instructions for a computer"], ["CODING", "another name for programming"],
     ["TATTOO", "a form of body modification where a design is made by inserting ink"], ["TECHNOLOGY", "Computer Information..."],
-    ["DATABASE", "The exam where Nick had a panic attack"], ["HANGMAN", "the game you are playing"], 
+    ["DATABASE", "a structured set of data held in a computer"], ["HANGMAN", "the game you are playing"], 
     ["ELECTRICITY", "the set of physical phenomena associated with the presence and motion of electric charge"],
-    ["GUCCI", "My G!!!"], ["COFFEE", "A drink in the morning"], ["PYTHON", "a programming language named after a snake"],
-    ["BESTBUY", "Future Shop is now..."], ["SUBWAY", "sandwiches; also an underground railroad"],
-    ["COMMITTEE", "A group of people appointed for a specific function"]
+    ["GUCCI", "a luxury brand of fashion house based in Florence, Italy"], ["COFFEE", "A drink in the morning"], 
+    ["PYTHON", "a programming language named after a snake"], ["BESTBUY", "Future Shop is now..."], 
+    ["SUBWAY", "sandwiches; also an underground railroad"], ["COMMITTEE", "A group of people appointed for a specific function"],
+    ["XBOX", "a gaming console created by Microsoft"]
     ); //array of words
 
 let to_guess = "";
