@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* Hangman Game Styles */
+
+.hangman-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 100px;
+  align-items: center;
+  background-image: url("/images/background.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hangman-btn {
+  background-color: firebrick;
+  padding: 10px 40px;
+  margin: 8px;
+  font-size: x-large;
+  font-family: cursive;
+  color: floralwhite;
+  opacity: 0.6;
+}
+
+.hangman-btn:hover {
+  opacity: 1;
+}
+
+.restart-btn {
+  background-color: firebrick;
+  color: floralwhite;
+  padding: 10px 40px;
+  width: 200px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.hangman-container b#score {
+  font-size: 25px;
+  color: antiquewhite;
+}
+
+.hint {
+  color: antiquewhite;
+}
+
+h2 {
+  font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+  color: antiquewhite;
+}

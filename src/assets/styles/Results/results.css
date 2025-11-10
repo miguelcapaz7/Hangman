@@ -1,0 +1,56 @@
+/* Shared page gradient */
+.page-gradient {
+  height: 100vh;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  font-family: "Exo", sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column; 
+  padding-top: 100px;
+  align-items: center;
+  text-align: center;  
+}
+
+/* Page-specific backgrounds */
+.victory-page {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.fail-page {
+  background: linear-gradient(-45deg, red, black);
+}
+
+/* Animated h1 */
+.color-change-green {
+  animation: color-change-green 1s infinite;
+}
+
+.color-change-red {
+  animation: color-change-red 1s infinite;
+}
+
+@keyframes color-change-green {
+  0% { color: #02fe00; }
+  50% { color: white; }
+  100% { color: #02fe00; }
+}
+
+@keyframes color-change-red {
+  0% { color: red; }
+  50% { color: white; }
+  100% { color: red; }
+}
+
+/* Page buttons */
+.page-button {
+  background-color: white;
+  color: black;
+  padding: 15px 32px;
+  font-size: 16px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border: 1px solid black;
+  margin-top: 20px;
+  cursor: pointer;
+}
